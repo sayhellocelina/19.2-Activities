@@ -44,10 +44,27 @@
   </table>
 
   <!-- ALTER THIS CODE TO TRIGGER THE MODAL -->
-  <button id="submitOrder" type="button" class="btn btn-primary">Order Pies!</button>
+  <button id="submitOrder" type="button" class="btn btn-primary" data-toggle="modal" data-target="#thankYouModal">Order Pies!</button>
 
-  <!-- Add modal triggered by above button here. -->
-  <!-- YOUR CODE HERE -->
+  <!-- Modal -->
+  <div class="modal fade" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thank you for your order!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Confirm!</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
