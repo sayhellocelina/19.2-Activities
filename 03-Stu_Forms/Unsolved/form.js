@@ -1,12 +1,13 @@
-// YOUR CODE HERE
-// Event listener for form submission
+// event listener for form submission
+$("#sendEmail").click(function () {
 
-
-  // Save the first name as a variable
-
-
-  // Set HTML of .modal-body
-
-
-  // Clear all fields in form
-
+  // save firstName to a variable
+  var firstName = $("#firstName").val();
+ 
+  // insert HTML into modal
+  $(".modal-body").html("Thank you, " + firstName + ". Your message has been sent!");
+ 
+  // clear the form
+  $(".form-control").val("");
+ 
+ });
